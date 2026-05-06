@@ -1,0 +1,112 @@
+{
+  "name": "Pooja R. Sonar",
+  "role": "Software Developer",
+  "tagline": "Full-Stack Developer with a focus on building robust real-time systems and intelligent AI-powered applications.",
+  "about": "Pooja Sonar is a results-driven Software Developer specializing in full-stack development, with a strong focus on the MERN stack, real-time systems, and AI-powered applications. Leveraging experience from diverse internships and her current role, she consistently engineers scalable web applications, optimizes front-end performance, and implements robust backend solutions using technologies like Node.js, Express, React, Next.js, and RabbitMQ. Pooja excels at building high-throughput real-time telemetry systems, crafting intuitive user interfaces, and integrating complex APIs for AI model inference. Her background as a hackathon achiever and former state chess player underscores her exceptional problem-solving abilities and strategic approach to complex challenges.",
+  "experience": 1.1,
+  "currentRole": "Software Developer at InnoFarms.AI",
+  "highlights": [
+    "Architected real-time telemetry system (10K+ readings/min) via Cosmos DB change feed + Node.js, achieving 99.9% uptime.",
+    "Integrated Socket.IO WebSockets + MQTT to serve 500+ farms with <100ms UI latency.",
+    "Built Next.js (TypeScript) + Redux dashboards for 50+ sensor cards, anomalies, and alerts.",
+    "Implemented RabbitMQ message-driven flows to decouple services and enhance reliability for asynchronous tasks.",
+    "Developed an AI-powered, gamified coding preparation platform (AccessAI) using Gemini's API.",
+    "Built a full-fledged MERN backend clone of Chess.com, implementing Socket.IO for real-time gameplay.",
+    "Designed a MERN UI for a text summarization tool with role-based views and auditable operations.",
+    "Secured 3rd place in a Hackathon organized by GDSC ADGITM.",
+    "Represented as a Goa State Chess Player."
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "skills": [
+        "TypeScript",
+        "JavaScript",
+        "Java",
+        "C++",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Core CS",
+      "skills": [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "skills": [
+        "React",
+        "Next.js",
+        "Redux",
+        "Tailwind CSS",
+        "MUI"
+      ]
+    },
+    {
+      "name": "Backend",
+      "skills": [
+        "Node.js",
+        "Express",
+        "Java Spring",
+        "REST APIs"
+      ]
+    },
+    {
+      "name": "Realtime",
+      "skills": [
+        "WebSockets",
+        "Socket.IO",
+        "MQTT",
+        "SSE",
+        "RabbitMQ"
+      ]
+    },
+    {
+      "name": "Cloud & Databases",
+      "skills": [
+        "Azure (Container Apps, Cosmos DB)",
+        "MongoDB"
+      ]
+    },
+    {
+      "name": "Tools",
+      "skills": [
+        "Git/GitHub",
+        "Postman"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AccessAI - CodeQuest (MERN)",
+      "description": "Developed AccessAI, an AI-powered, gamified coding preparation platform designed to help users master programming languages. This MERN stack application provides comprehensive educational content, engaging coding challenges, and AI-driven assistance leveraging Gemini's API, with support for languages including Solidity, JavaScript, CSS, and React.",
+      "tech": [
+        "Solidity",
+        "JavaScript",
+        "CSS",
+        "React",
+        "Gemini's API",
+        "MERN Stack"
+      ]
+    },
+    {
+      "name": "Chess.com Backend Clone (MERN)",
+      "description": "Engineered a robust, full-stack Chess.com backend clone using the MERN stack (MongoDB, Express, React, Node.js) to accurately mimic real-time chess gameplay. Implemented advanced Socket.IO WebSockets, including rooms, namespaces, heartbeats, and seamless reconnection, to synchronize game moves, clocks, and actions like resign/draw with high fidelity. Designed and secured RESTful Express APIs for managing users, games, moves, and sessions, incorporating JWT (access and refresh tokens), Role-Based Access Control (RBAC), rate limiting, and CORS policies.",
+      "tech": [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js",
+        "Socket.IO",
+        "JWT"
+      ]
+    }
+  ],
+  "contact": {
+    "email": "poojasonar671@gmail.com",
+    "linkedin": "https://linkedin.com/in/poojarsonar",
+    "github": "https://github.com/poojarsonar"
+  }
+}
