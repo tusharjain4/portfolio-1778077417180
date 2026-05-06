@@ -1,0 +1,351 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-manrope); /* Default body font */
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Base styles for Adizen template classes */
+
+/* Header */
+.header-container {
+  @apply w-full bg-adizen-white border-b border-adizen-black overflow-x-auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.header-content {
+  @apply w-full max-w-1344 mx-auto flex justify-between items-center px-4 py-1.5 md:px-6 lg:px-12; /* Adjust padding responsive */
+}
+
+.logo-section {
+  @apply flex gap-2 items-center;
+}
+
+.logo-text {
+  @apply text-[28px] lg:text-[36px] font-source-serif-4 font-semibold leading-[58px] text-adizen-black; /* Base and larger */
+}
+
+.logo-divider {
+  @apply w-[1px] h-[30px] bg-adizen-light-grey;
+}
+
+.logo-icon {
+  @apply w-[26px] h-[28px];
+}
+
+.nav-menu {
+  @apply hidden lg:flex gap-6 lg:gap-8 items-center;
+}
+
+.nav-menu button {
+  @apply text-lg lg:text-3xl font-dotgothic16 font-normal leading-[41px] text-adizen-black bg-transparent border-none cursor-pointer transition-colors duration-300;
+}
+
+.nav-menu button:hover {
+  @apply text-adizen-primary-blue;
+}
+
+.hamburger {
+  @apply block lg:hidden bg-transparent border-none text-2xl cursor-pointer;
+}
+
+.main-container {
+  @apply w-full px-4 md:px-6 lg:px-12;
+}
+
+.content-wrapper {
+  @apply w-full max-w-1344 mx-auto;
+}
+
+/* Hero Section */
+.hero-section {
+  @apply py-6 lg:py-12 w-full;
+}
+
+.hero-content {
+  @apply flex flex-col md:flex-row gap-4 md:gap-7 w-full;
+}
+
+.hero-left {
+  @apply relative w-full md:w-[60%] mb-15 md:mb-32;
+}
+
+.hero-text-container {
+  @apply flex flex-col;
+}
+
+.hero-hello {
+  @apply text-5xl md:text-7xl lg:text-[171px] font-dotgothic16 font-normal leading-[124px] md:leading-[200px] lg:leading-[248px] text-adizen-black;
+}
+
+.hero-im {
+  @apply text-5xl md:text-7xl lg:text-[171px] font-dotgothic16 font-normal leading-[124px] md:leading-[200px] lg:leading-[248px] text-center text-adizen-black mt-[-33px] ml-3 w-7/12 md:w-auto; /* Responsive adjustments */
+}
+
+.scroll-text {
+  @apply text-xl md:text-3xl lg:text-4xl font-dotgothic16 font-normal leading-[46px] underline text-adizen-black w-full mt-4 lg:w-1/5; /* Responsive adjustments */
+}
+
+.hero-image {
+  @apply w-full max-w-[522px] h-auto mt-4 mx-auto;
+}
+
+.hero-right {
+  @apply flex flex-col gap-6 w-full md:w-[38%] mt-4 md:mt-8;
+}
+
+.title-stack {
+  @apply relative w-full;
+}
+
+.title-bg-top {
+  @apply w-[150px] h-[39px] md:w-[240px] md:h-[62px] lg:w-[300px] lg:h-[78px] bg-adizen-primary-blue rounded-[30px] mt-1.5 ml-7 md:mt-2.5 md:ml-7 lg:mt-2.5 lg:ml-14;
+}
+
+.title-text-container {
+  @apply flex flex-col;
+}
+
+.title-product {
+  @apply text-3xl md:text-5xl lg:text-[65px] font-dotgothic16 font-normal leading-[95px] text-adizen-white ml-12 lg:ml-[47px];
+}
+
+.title-designer-section {
+  @apply flex flex-col items-end mt-[-13px];
+}
+
+.title-designer {
+  @apply text-3xl md:text-5xl lg:text-[65px] font-dotgothic16 font-normal leading-[95px] text-adizen-white mr-8 lg:mr-8;
+}
+
+.title-name { /* Renamed from title-nikita to be generic */
+  @apply text-5xl md:text-7xl lg:text-[171px] font-dotgothic16 font-normal leading-[124px] md:leading-[200px] lg:leading-[248px] text-center text-adizen-black mt-[-10px];
+}
+
+.title-bg-bottom {
+  @apply w-[166px] h-[39px] md:w-[266px] md:h-[62px] lg:w-[332px] lg:h-[78px] bg-adizen-primary-blue rounded-[30px] mt-10 md:mt-10 lg:mt-[84px] mr-3 md:mr-3 lg:mr-6;
+}
+
+.hero-description {
+  @apply text-base md:text-lg lg:text-2xl font-manrope font-normal leading-[28px] text-justify text-adizen-black w-full;
+}
+
+/* Works Section */
+.works-section {
+  @apply border-b border-adizen-black bg-adizen-white py-12 lg:py-[94px];
+}
+
+.works-content {
+  @apply flex flex-col gap-4 lg:gap-7 w-full mt-4;
+}
+
+.works-title {
+  @apply text-3xl lg:text-4xl font-dotgothic16 font-normal leading-[57px] text-adizen-black;
+}
+
+.project-item {
+  @apply border-t border-adizen-border-grey pt-4 lg:pt-8 flex flex-col md:flex-row gap-4 md:gap-0 md:justify-between;
+}
+
+.project-info {
+  @apply flex flex-col gap-3 md:w-[35%];
+}
+
+.project-title {
+  @apply text-lg md:text-xl lg:text-2xl font-manrope font-semibold leading-[33px] tracking-[4px] uppercase text-adizen-black;
+}
+
+.project-keywords {
+  @apply flex flex-col gap-1.5;
+}
+
+.keyword {
+  @apply text-xs md:text-sm font-manrope font-semibold leading-5 tracking-[2px] uppercase text-adizen-black;
+}
+
+.project-description {
+  @apply text-sm md:text-base font-manrope font-normal leading-[22px] text-adizen-black;
+}
+
+.project-image {
+  @apply w-full h-auto md:w-[62%] self-center mt-4 md:mt-0;
+}
+
+/* Skills Section */
+.skills-section {
+  @apply border-b border-adizen-black bg-adizen-white py-12 lg:py-[94px];
+}
+
+.skills-content {
+  @apply flex flex-col gap-4;
+}
+
+.skills-title {
+  @apply text-3xl lg:text-4xl font-dotgothic16 font-normal leading-[57px] text-adizen-black mt-0.5;
+}
+
+.skills-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 lg:ml-[316px] w-full;
+}
+
+.skill-card {
+  @apply flex flex-col gap-3.5;
+}
+
+.skill-icon {
+  @apply w-[68px] h-[68px] bg-adizen-skill-bg rounded-[34px] p-2.5 flex items-center justify-center;
+}
+
+.skill-icon img {
+  @apply w-full h-full;
+}
+
+.skill-info {
+  @apply flex flex-col gap-1.5;
+}
+
+.skill-name {
+  @apply text-lg md:text-xl lg:text-2xl font-manrope font-bold leading-[33px] text-justify text-adizen-black;
+}
+
+.skill-description {
+  @apply text-sm md:text-base font-manrope font-normal leading-[19px] text-justify text-adizen-black;
+}
+
+/* Journey Section (adapted for highlights) */
+.journey-section {
+  @apply border-b border-adizen-black bg-adizen-white py-12 lg:py-[94px];
+}
+
+.journey-content {
+  @apply flex flex-col gap-4;
+}
+
+.journey-title {
+  @apply text-3xl lg:text-4xl font-dotgothic16 font-normal leading-[57px] text-adizen-black mt-0.5;
+}
+
+.journey-list {
+  @apply flex flex-col gap-2.5 lg:gap-5 w-full lg:ml-[316px];
+}
+
+.journey-item {
+  @apply border border-adizen-black bg-adizen-white p-3 md:p-6 flex flex-col gap-2 md:gap-4;
+}
+
+.journey-header {
+  @apply flex gap-1.5 md:gap-3 items-center;
+}
+
+.journey-icon {
+  @apply w-12 h-12 bg-adizen-journey-icon-bg rounded-2xl p-2.5 flex items-center justify-center flex-shrink-0;
+}
+
+.journey-icon img {
+  @apply w-full h-full;
+}
+
+.journey-info {
+  @apply flex flex-col flex-1;
+}
+
+.journey-institution {
+  @apply text-sm md:text-base font-archivo font-extrabold leading-tight text-adizen-black;
+}
+
+.journey-period {
+  @apply text-sm md:text-base font-archivo font-normal leading-tight text-adizen-black;
+}
+
+.journey-details {
+  @apply flex gap-1.5 md:gap-3 items-start;
+}
+
+.journey-line {
+  @apply w-12 h-auto md:h-24 flex-shrink-0 mb-1; /* Adjusted height for content */
+  /* Using a div and border for the line */
+  @apply relative;
+}
+.journey-line::before {
+  content: '';
+  @apply absolute left-1/2 -translate-x-1/2 w-[2px] bg-adizen-black h-full;
+}
+
+
+.journey-description {
+  @apply text-base md:text-xl font-archivo font-normal leading-6 text-adizen-black flex-1;
+}
+
+/* Contact Section (added as a separate section) */
+.contact-section {
+  @apply border-b border-adizen-black bg-adizen-white py-12 lg:py-[94px];
+}
+
+.contact-content {
+  @apply flex flex-col gap-4;
+}
+
+.contact-title {
+  @apply text-3xl lg:text-4xl font-dotgothic16 font-normal leading-[57px] text-adizen-black mt-0.5;
+}
+
+.contact-links {
+  @apply flex flex-col sm:flex-row gap-4 items-center sm:justify-start mt-4;
+}
+
+/* Footer */
+.footer-section {
+  @apply bg-adizen-white py-3;
+}
+
+.footer-content {
+  @apply flex flex-col gap-3 w-full;
+}
+
+.footer-top {
+  @apply flex flex-col md:flex-row gap-3 md:gap-0 items-center md:justify-between md:items-end mt-9;
+}
+
+.footer-copyright {
+  @apply text-lg md:text-xl lg:text-3xl font-dotgothic16 font-normal leading-[41px] text-adizen-black text-center md:text-left;
+}
+
+.footer-email-button,
+.social-link-button {
+  @apply text-base md:text-lg font-archivo-narrow font-medium leading-[27px] text-adizen-black border border-adizen-black px-6 py-2 bg-transparent cursor-pointer transition-all duration-300 whitespace-nowrap;
+}
+
+.footer-email-button:hover,
+.social-link-button:hover {
+  @apply bg-adizen-black text-adizen-white;
+}
+
+.footer-pattern {
+  @apply w-full h-auto;
+}
+
+/* Interactive states */
+button:focus {
+  @apply outline-none ring-2 ring-adizen-primary-blue ring-offset-2;
+}
+
+button:active {
+  transform: scale(0.98);
+}
